@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout de Cabeçalho e Conteúdo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+        }
+
+        #search-form {
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #search-form input[type="text"] {
+            flex-grow: 1;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #search-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .timeline {
+            width: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        aside {
+            width: 35%;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <form id="search-form" action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="Pesquisar no Google" required>
+            <input type="submit" value="Pesquisar">
+        </form>
+    </header>
+
+    <main>
+        <div class="timeline">
+            <h2>Timeline</h2>
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <aside>
+            <h2>Aside 1</h2>
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </aside>
+
+        <aside>
+            <h2>Aside 2</h2>
+            <div class="card">
+                <h3>Card 6</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 7</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Rodapé do site</p>
+    </footer>
+</body>
+</html>
